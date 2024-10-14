@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "82ca4754c4e85a3551bf76a747a0a047",
+    "content-hash": "be71f19c56c584f03b5305c702fceffc",
     "packages": [
         {
             "name": "brick/math",
@@ -2004,19 +2004,22 @@
         },
         {
             "name": "midtrans/midtrans-php",
-            "version": "2.3.2",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Midtrans/midtrans-php.git",
-                "reference": "94cdca1eba636b75ec3bdcf338e303068f14025c"
+                "reference": "ebbe9127f925d9588bb4ab6b1d48bf27ce14a1ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Midtrans/midtrans-php/zipball/94cdca1eba636b75ec3bdcf338e303068f14025c",
-                "reference": "94cdca1eba636b75ec3bdcf338e303068f14025c",
+                "url": "https://api.github.com/repos/Midtrans/midtrans-php/zipball/ebbe9127f925d9588bb4ab6b1d48bf27ce14a1ad",
+                "reference": "ebbe9127f925d9588bb4ab6b1d48bf27ce14a1ad",
                 "shasum": ""
             },
             "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-openssl": "*",
                 "php": ">=5.4"
             },
             "require-dev": {
@@ -2031,7 +2034,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-3.0"
+                "MIT"
             ],
             "authors": [
                 {
@@ -2051,9 +2054,9 @@
             "homepage": "https://midtrans.com",
             "support": {
                 "issues": "https://github.com/Midtrans/midtrans-php/issues",
-                "source": "https://github.com/Midtrans/midtrans-php/tree/v2.3.2"
+                "source": "https://github.com/Midtrans/midtrans-php/tree/v2.6.0"
             },
-            "time": "2020-07-21T06:42:34+00:00"
+            "time": "2024-09-24T12:46:40+00:00"
         },
         {
             "name": "monolog/monolog",

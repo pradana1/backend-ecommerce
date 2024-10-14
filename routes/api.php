@@ -114,6 +114,13 @@ Route::prefix('web')->group(function () {
     //remove cart
     Route::post('/carts/remove', [App\Http\Controllers\Api\Web\CartController::class, 'removeCart'], ['as' => 'web']);
 
+    //checkout route
+    Route::post('/checkout', [App\Http\Controllers\Api\Web\CheckoutController::class, 'store'], ['as' => 'web']);
+
+    //notification handler route
+    Route::post('/notification', [App\Http\Controllers\Api\Web\NotificationHandlerController::class, 'index'], ['as' => 'web']);
+
+
 });
         
 
