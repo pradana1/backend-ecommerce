@@ -63,6 +63,21 @@ class CartController extends Controller
         return new CartResource(true, 'Success Add To Cart', $item);
     }
 
+     /**
+     * getCartPrice
+     *
+     * @return void
+     */
+    public function getCartPrice()
+    {
+        $totalPrice = Cart::with('product')
+            ->where('customer_id', auth()->guard('api_customer')->user()->id)
+            ->sum('price');
+        
+        //return with Api Resource
+        return new CartResource(true, 'Total Cart Price', $totalPrice);
+    }
+
     public function getCartWeight()
     {
         $totalWeight = Cart::with('product')
